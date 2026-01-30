@@ -1,0 +1,233 @@
+.admin-contacts {
+  padding: 60px 0;
+  background: var(--bg-light);
+}
+
+.admin-contacts .section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.admin-contacts .section-header h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.admin-contacts .section-header p {
+  font-size: 1.125rem;
+  color: var(--text-light);
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeIn 0.8s ease;
+}
+
+.contact-item {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: var(--shadow);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-color);
+}
+
+.contact-main {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: var(--secondary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 6px;
+}
+
+.contact-header-row h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.contact-badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.priority-badge,
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.priority-high {
+  background: #FEE2E2;
+  color: #991B1B;
+}
+
+.priority-medium {
+  background: #FEF3C7;
+  color: #92400E;
+}
+
+.priority-low {
+  background: #E0E7FF;
+  color: #3730A3;
+}
+
+.contact-status-pending {
+  background: #DBEAFE;
+  color: #1E40AF;
+}
+
+.contact-status-progress {
+  background: #FDE68A;
+  color: #92400E;
+}
+
+.contact-status-responded {
+  background: #D1FAE5;
+  color: #065F46;
+}
+
+.contact-email {
+  color: var(--text-light);
+  font-size: 0.875rem;
+  margin-bottom: 8px;
+}
+
+.contact-subject {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+.contact-message {
+  color: var(--text-light);
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.contact-meta {
+  color: var(--text-light);
+  font-size: 0.8125rem;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-action-contact {
+  padding: 8px 16px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-light);
+  color: var(--text-dark);
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-action-contact:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.btn-reply {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-reply:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.btn-mark {
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.btn-mark:hover {
+  background: var(--secondary-color);
+  color: white;
+}
+
+.btn-delete {
+  border-color: #EF4444;
+  color: #EF4444;
+}
+
+.btn-delete:hover {
+  background: #EF4444;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-contacts {
+    padding: 40px 0;
+  }
+
+  .admin-contacts .section-header h2 {
+    font-size: 1.875rem;
+  }
+
+  .contact-main {
+    flex-direction: column;
+  }
+
+  .contact-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
