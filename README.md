@@ -51,16 +51,7 @@ A modern, full-stack web application featuring a lead generation landing page wi
 - Node.js 18+
 - Maven (included as mvnw)
 
-### Option 1: One-Click Start (Windows)
-```bash
-# First time setup
-setup.bat
-
-# Start both servers
-start-all.bat
-```
-
-### Option 2: Manual Start
+### Starting the Application
 
 **Terminal 1 - Backend:**
 ```bash
@@ -134,12 +125,6 @@ Flipr_Drive_project/
 │   ├── MongoDB_Setup_Guide.md         # Database setup
 │   ├── VERIFICATION_CHECKLIST.md      # Testing checklist
 │   └── QUICK_REFERENCE.md             # Quick commands
-│
-└── Scripts/
-    ├── setup.bat                      # One-time setup
-    ├── start-all.bat                  # Start everything
-    ├── start-backend.bat              # Backend only
-    └── start-frontend.bat             # Frontend only
 ```
 
 ---
@@ -327,11 +312,12 @@ This project is for educational and portfolio purposes.
 Your full-stack application is completely integrated and ready to use!
 
 ### Next Steps:
-1. ✅ Run `start-all.bat` to start the application
-2. ✅ Open http://localhost:5173/admin/login
-3. ✅ Login with `admin` / `admin123`
-4. ✅ Explore the admin dashboard
-5. ✅ Start building your features!
+1. ✅ Start the backend server in one terminal
+2. ✅ Start the frontend server in another terminal
+3. ✅ Open http://localhost:5173/admin/login
+4. ✅ Login with `admin` / `admin123`
+5. ✅ Explore the admin dashboard
+6. ✅ Start building your features!
 
 ---
 
